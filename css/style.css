@@ -60,7 +60,7 @@ header, .searchresults{
 	padding:20px 40px;
 	background-color: #F6F6F6;
 	width:300px;
-	color:red;
+	color:#F64F4F;
 	margin:auto auto;
 	border-radius: 10px;
 }
@@ -70,6 +70,7 @@ header, .searchresults{
 	background-color: white;
 	border-radius:10px;
 	height: 300px;
+	width:270px;
 }
 .recipe-img{
 	width:100%;

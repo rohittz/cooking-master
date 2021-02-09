@@ -5,7 +5,7 @@ body{
 	background-color: #EDD263;
 	font-family: 18px;
 }
-header, .searchresults{
+header, .searchresults, #recipe-details{
 	padding:20px 80px;
 }
 .menu > *{
@@ -20,10 +20,44 @@ header, .searchresults{
 .menu{
 	column-gap: 50px;
 }
-.top, .menu, .searchsection, .recipe-name{
+.top,.menu, .searchsection, .recipe-name{
 	display:flex;
 	flex-flow: row nowrap;
 	align-items: center;
+}
+
+.recipe{
+	display: flex;
+	width:70%;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 10px;
+	padding:10px 10px;
+}
+.recipe > .aboutRecipe >h1{
+	margin-left:35px;
+	color:#47566a;
+}
+.aboutrecipeImg{
+	width:340px;
+	height:360px;
+}
+.aboutrecipeImg img{
+	width:100%;
+	height:100%;
+	border-radius:10px;
+}
+i{
+	color:#3b2d64;
+	margin-right: 10px;
+}
+.list-ingredients > li{
+	list-style-type: none;
+	margin-top:8px;
+	font-size:15px;
+	color: #47566A;
 }
 .searchsection{
 	margin-top : 30px;
@@ -33,6 +67,11 @@ header, .searchresults{
 	padding:10px 20px;
 	border:none;
 	border-radius: 6px;
+}
+#recipe-details{
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
 #searchbox{
 	width:310px;
@@ -70,7 +109,6 @@ header, .searchresults{
 	background-color: white;
 	border-radius:10px;
 	height: 300px;
-	width:270px;
 }
 .recipe-img{
 	width:100%;
@@ -86,7 +124,7 @@ header, .searchresults{
 	text-align: center;
 	font-weight: 500;
 }
-img{
+.recipe-img > img, img{
 	width:100%;
 	height:100%;
 	border-top-left-radius: 10px;
